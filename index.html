@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+  background: #000;
+}
+div {
+  color: #8002f5;
+  font-family: Monaco, monospace;
+  font-size: 24px;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 45%;
+  left: 0;
+  animation: 120ms infinite normal glitch;
+  text-align: center;
+}
+span {
+  animation: 1s infinite normal main;
+  animation-direction: alternate-reverse;
+  animation-timing-function:linear;
+}
+::-moz-selection {
+  background: #7021d2;
+  color: #fff;
+}
+::selection {
+  background: #7021d2;
+  color: #fff;
+}
+.filter-purple{
+    filter: invert(17%) sepia(72%) saturate(6529%) hue-rotate(267deg) brightness(84%) contrast(96%);
+    width: 70px;
+    height: auto;
+}
+@keyframes glitch {
+  0% {left: 0;}
+  40%, 80% {opacity: 1;}
+}
+@keyframes main {
+  0%   {opacity: 0;}
+  25%  {opacity: 0.25;}
+  50%  {opacity: 0.5;}
+  75%  {opacity: 1;}
+}
+
+    </style>
+</head>
+<body>
+    <!-- <body oncontextmenu="return false" onselectstart="return false" ondragstart="return false"> -->
+      <div id="main">█ █ █ <span>█ █ █ █ █ █ █ █ █ █ </span>31%
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&gt; Portfolio Coming Soon !  <span id="Tuned"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <br>&gt; Work-In-Progress&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <br><br><a href="https://www.linkedin.com/in/surajfeb14/"><img src="play.svg" class="filter-purple"/></a>
+      </div>
+    </body>
+</html>
